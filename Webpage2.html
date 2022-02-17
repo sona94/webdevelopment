@@ -1,0 +1,43 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="website.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+function scrollto(div)
+{
+ $('html,body').animate(
+ {
+  scrollTop: $("#"+div).offset().top
+ },'slow');
+}
+</script>
+</head>
+<body>
+<div id="header">
+ <li id="site_name">Coding.com</li>
+ <li onclick="scrollto('home');">HOME</li>
+ <li onclick="scrollto('about');">ABOUT</li>
+ <li onclick="scrollto('contact');">CONTACT</li>
+</div>
+
+<div id="home">
+ <h1>Demo Of Single Page Website Using HTML, CSS And jQuery<p>Coding.com</p></h1>
+ <p>HTML (the Hypertext Markup Language) and CSS (Cascading Style Sheets) are two of the core technologies for building Web pages. HTML provides the structure of the page, CSS the (visual and aural) layout, for a variety of devices. Along with graphics and scripting, HTML and CSS are the basis of building Web pages and Web Applications. </p>
+</div>
+
+<div id="about">
+ <p>In this tutorial we will show you how to create One Page Website Template Using HTML, CSS And jQuery.Now you can build simple and beautiful website quickly.</p>
+ <p>Coding.com is a complete destination to learn Web Development with Best, Fast and Easy Methods for those who is a novice and wants to be the expert in Web Development.</p>
+ <p> </p>
+</div>
+<div id="contact">
+<h1>If you have any question or query you can contact us at <br>sonuvpatel94@gmail.com <br><br>or you can fill the form below</h1>
+<input type="text" placeholder="Name">
+<textarea placeholder="Message"></textarea>
+<input type="submit" value="SEND">
+</div>
+
+</body>
+</html>
+
